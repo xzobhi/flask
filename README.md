@@ -1,1 +1,1 @@
-cette page web se veut être une bibliothèque d'informations et d'articles, de pensées et de rélfexion. Je veux l'utiliser à des fins de création artistique.
+cette page web se veut être une bibliothèque d'informations et d'articles, de pensées organiques et de réflexions théoriques. Je veux l'utiliser à des fins de création artistique, notamment autour de mon projet xzobhi.
