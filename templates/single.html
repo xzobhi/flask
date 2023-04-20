@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>xzobhi</title>
+        <!-- Link stylesheets here -->
+        <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style_single.css')}}"> 
+    </head>
+
+    <body>
+        <h1>{{page.title}}</h1>
+        <p>{{page}}</p>
+        <ul>{% if page.sources %} {% for i in  range (0, page.sources|length) %}<li> <a href="{{page.sources[i]}}" target="_blank">{% if page.titresources[i] %} {{page.titresources[i]}} {% else %} {{page.sources[i]}} {% endif %} </a> </li> {% endfor %} {% endif %}</ul>
+
+        <!-- Link script files here -->
+        <script src="script.js"></script>
+    </body>
+</html>

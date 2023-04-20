@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>xzobhi</title>
+        <!-- Link stylesheets here -->
+        <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}"> 
+    </head>
+    <body>
+        <h1>Ressources</h1>
+        <ul>
+        {% for a in latest %}
+        <li> 
+            {% if a.image %} <img  src="{{a.image}}"></img> {% else %} <img src="/static/img/nuage.jpg"></img> {% endif %} 
+            <a href="/{{a.path}}"> <h2> {{ a.title }} </h2><br>
+                <h3> {% if a.soustitre %} {{ a.soustitre }} <br> {% endif %} </h3>
+            {{ a.category }} <br> </a>
+        </li>
+        {% endfor %}
+        </ul>
+
+        <!-- Link script files here -->
+        <script src="script.js"></script>
+    </body>
+</html>
