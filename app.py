@@ -8,7 +8,7 @@ FLATPAGES_EXTENSION = '.md'
 FLATPAGES_AUTO_RELOAD = True
 
 app = Flask(__name__) 
-app.config['APPLICATION_ROOT'] = '/flask'
+app.config['APPLICATION_ROOT'] = '/xzobhi'
 app.config.from_object(__name__)
 pages = FlatPages(app)
 
